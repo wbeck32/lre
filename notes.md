@@ -20,5 +20,7 @@
 Resources:
 
 https://www.w3.org/2009/cheatsheet/
+
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
 https://jsonformatter.curiousconcept.com/
