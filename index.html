@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Code</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: lightsteelblue;
+        }
+
+        li {
+            list-style: square;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            height: 30px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 onclick="fetchFriends()">Friend List</h1>
+    </header>
+
+    <main>
+        <ul id="friends"></ul>
+    </main>
+
+    <footer>
+        &copy; 2017 NewCo, Inc.
+    </footer>
+
+    <script>
+    function fetchFriends() {
+        const ul = document.getElementById('friends');
+
+        fetch('friends.json')
+            .then(response => response.json())
+            .then(friends => {
+                friends.forEach(friend => {
+                    const li = document.createElement('li');
+                    li.innerText = `${friend.first} ${friend.last}`;
+                    ul.appendChild(li);
+                });
+            });
+}
+    </script>
+</body>
+</html>
