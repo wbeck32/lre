@@ -4,12 +4,15 @@
 2. Console gave me three errors
 
   a. GET http://localhost/friends.json 403 (Forbidden)
+  
     Response: I can access /friends.json directly from the browser. This was resolved by removing the forward slash from the fetch parameter.
 
   b. Uncaught (in promise) SyntaxError: Unexpected token < in JSON at position 0
+  
     Response: pasted friends.json into json validator, there were no errors. For some reason, based on the message in the console this error is complaining about the first < in the doctype. Not totally clear on how promises work but this error also went away after I changed the path of the friends.json parameter.
 
   c. GET http://localhost/favicon.ico 403 (Forbidden)
+  
     Response: this seems to be a Chrome-specific issue. A bug was filed in 2010 and supposedly fixed as of v 29, but a lot of people are still reporting that it isn't fixed. I'm using v 59.
     https://bugs.chromium.org/p/chromium/issues/detail?id=39402#c47
     It's not an issue in Firefox Developer Edition or Safari but it is in Chromium.
