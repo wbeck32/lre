@@ -1,6 +1,6 @@
 function fetchFriends (choice) {
   const ul = document.getElementById('friends');
-  var filename =  choice ? 'friends.json' : 'none.json';
+  var filename =  choice ? 'data/friends.json' : 'data/none.json';
 
   fetch(filename)
     .then(response => response.json())
