@@ -25,7 +25,6 @@
 - Tweaks to visibility at different points in the flow
 > Error message or data should be cleared at some point? Depends on specs.
 
-
 ### Resources
 
 - [W3C cheat sheet](https://www.w3.org/2009/cheatsheet/)
