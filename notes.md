@@ -28,5 +28,6 @@
 ### Resources
 
 - [W3C cheat sheet](https://www.w3.org/2009/cheatsheet/)
-- [MDN fetch documentation ](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [MDN fetch documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [MDN promise documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [JSON validator](https://jsonformatter.curiousconcept.com/)
