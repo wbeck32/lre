@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: lightsteelblue;
+}
+
+h4 {
+  color: red;
+}
+
+li {
+  list-style: square;
+}
+
+.option {
+  margin-left: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+}
